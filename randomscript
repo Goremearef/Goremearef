@@ -1,0 +1,69 @@
+
+
+
+local player = game.Players.LocalPlayer
+
+
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+
+local Window = OrionLib:MakeWindow({Name = "oke letsa play a mario game", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+
+local Tab = Window:MakeTab({
+	Name = "my scripts that i use",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+OrionLib:MakeNotification({
+	Name = "welcome lol i executed cuz bored",
+	Content = "mario is ready to play this gaem",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+
+Tab:AddButton({
+	Name = "wolkspeed for some reason :)",
+	Callback = function()
+      		player.Character.Humanoid.Walkspeed = 200
+  	end    
+})
+
+
+Tab:AddButton({
+	Name = "IY cuz ofc need",
+	Callback = function(loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))())
+      		print("done")
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Button!",
+	Callback = function(loadstring(game:HttpGet'https://raw.githubusercontent.com/stavratum/lua/main/fnb/main.lua')()
+)
+      		print("arrow arrow arrow ARROW....stfu lol")
+  	end    
+})
+
+--[[
+
+
+local Tab = Window:MakeTab({
+	Name = "misc",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+Tab:AddButton({
+	Name = "Destroy the gui!",
+	Callback = function(OrionLib:Destroy())
+      		print("bruh... why")
+  	end    
+})
+
+
+OrionLib:Init()
